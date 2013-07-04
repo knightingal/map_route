@@ -2,6 +2,7 @@ from SerialNum import *
 
 class CNode(object):
     def __init__(self, nodeID, nodeMap):
+
         self.nodeID = nodeID
         self.neighborNodeIDList = []
         self.routeList = []
@@ -12,6 +13,7 @@ class CNode(object):
         updated = False
         
     
+
     def broadcastRouteToNeighbor(self):
         routeListToUpdate = []
         for route in self.routeList:
